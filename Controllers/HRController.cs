@@ -33,10 +33,6 @@ public class HRController : Controller
         {
             return NotFound();
         }
-        catch (ArgumentException)
-        {
-            return Conflict();
-        }
     }
 
     [HttpGet(Name = "GetEmployeeData")]
